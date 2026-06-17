@@ -1,0 +1,20 @@
+model:
+  name: CNNClassifier
+  num_classes: 5
+
+training:
+  epochs: 100
+  batch_size: 32
+  learning_rate: 0.001
+  optimizer: Adam
+  criterion: CrossEntropyLoss
+
+scheduler:
+  use_scheduler: true
+  step_size: 10
+  gamma: 0.1
+
+device:
+  use_gpu: true
+
+seed: 42
